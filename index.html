@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Digit xAyB Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 3-Digit xAyB Game</h1>
+            <p>Guess the 3-digit number! You have 10 attempts.</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-card">
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Guess a 3-digit number (100-999)</li>
+                    <li><strong>A</strong> = correct digit in correct position</li>
+                    <li><strong>B</strong> = correct digit in wrong position</li>
+                    <li>Example: Secret is 123, guess 132 → 1A2B</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="input-section">
+                <input type="number" id="guessInput" placeholder="Enter 3-digit number" min="100" max="999">
+                <button id="submitGuess">Submit Guess</button>
+                <button id="newGame" class="secondary">New Game</button>
+            </div>
+
+            <div class="attempts-info">
+                <span>Attempts: <span id="attemptCount">0</span>/10</span>
+            </div>
+
+            <div class="guesses-container">
+                <h3>Your Guesses</h3>
+                <div id="guessesList"></div>
+            </div>
+
+            <div id="gameMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
