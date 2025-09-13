@@ -1,0 +1,15 @@
+{
+  "name": "septagon-physics-experiments",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dry": "node experiments/runner.js --both --dry-run --trials=10",
+    "run:linear": "node experiments/runner.js --linear --trials=10",
+    "run:septagon": "node experiments/runner.js --septagon --trials=10"
+  },
+  "dependencies": {
+  }
+}
+
+
